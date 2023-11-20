@@ -18,3 +18,6 @@ def read_item(item_id: int, query_param: str = None):
 @flask_app.route("/")
 def hello():
     return "Hello from Flask!"
+
+if __name__ == "__main__":
+    from multiprocessing import Process
