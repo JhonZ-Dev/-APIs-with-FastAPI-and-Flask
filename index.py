@@ -21,3 +21,7 @@ def hello():
 
 if __name__ == "__main__":
     from multiprocessing import Process
+    
+      # FastAPI
+    fastapi_process = Process(target=app.run, kwargs={"host": "127.0.0.1", "port": 8000})
+    fastapi_process.start()
