@@ -29,3 +29,5 @@ if __name__ == "__main__":
       # Flask
     flask_process = Process(target=flask_app.run, kwargs={"host": "127.0.0.1", "port": 5000})
     flask_process.start()
+    fastapi_process.join()
+    flask_process.join()
