@@ -25,3 +25,7 @@ if __name__ == "__main__":
       # FastAPI
     fastapi_process = Process(target=app.run, kwargs={"host": "127.0.0.1", "port": 8000})
     fastapi_process.start()
+    
+      # Flask
+    flask_process = Process(target=flask_app.run, kwargs={"host": "127.0.0.1", "port": 5000})
+    flask_process.start()
