@@ -1,6 +1,10 @@
 # main.py - FastAPI
 from fastapi import FastAPI
 
+# flask_app.py - Flask
+from flask import Flask
+
+
 app = FastAPI()
 
 @app.get("/")
